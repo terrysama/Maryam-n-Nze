@@ -3,6 +3,44 @@ html {
 }
 html body {
   background-color: #666;
+  color: #fcca89;
+}
+html body .my-nav {
+  z-index: 50;
+}
+html body .my-nav .navbar-brand img {
+  width: clamp 5rem, 9.5vw, 10rem;
+}
+html body .my-nav .nav-item {
+  color: #ebe0be;
+}
+html body .my-nav .nav-item:hover {
+  color: #c3ae6d;
+}
+html body .site-header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(180deg, #2e394f 20.79%, #000000 91.02%);
+  overflow: hidden;
+}
+html body .site-header .hero-text {
+  padding-top: 15rem;
+  z-index: 5;
+}
+html body .site-header .hero-text h1 {
+  font-weight: 400;
+}
+html body .site-header .hero-text h3 {
+  font-weight: 500;
+}
+html body .site-header .hero-text h3 .bold {
+  font-weight: 900;
+}
+html body .site-header #hero-couple {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 80vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
