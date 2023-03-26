@@ -9,7 +9,7 @@ html body .my-nav {
   z-index: 50;
 }
 html body .my-nav .navbar-brand img {
-  width: clamp 5rem, 9.5vw, 10rem;
+  width: clamp(5rem, 16.5vw, 10rem);
 }
 html body .my-nav .nav-item {
   color: #ebe0be;
@@ -41,6 +41,43 @@ html body .site-header #hero-couple {
   right: 0;
   bottom: 0;
   max-height: 80vh;
+}
+html body main {
+  background-color: #000000;
+}
+html body main .details {
+  position: relative;
+  height: 200vh;
+}
+html body main .details-border {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+html body main .details-layout {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+}
+html body main .details-logo {
+  height: clamp(9rem, 20vw, 38rem);
+}
+html body main #rsvp .contacts-link {
+  text-decoration: none;
+  color: #fcca89;
+}
+html body main #rsvp .contacts-link:hover {
+  text-decoration: underline;
+}
+html body footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/footer_image.svg") center no-repeat;
+  background-size: auto;
+  padding: 15vh 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

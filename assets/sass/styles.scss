@@ -1,0 +1,102 @@
+$nav-color: #ebe0be;
+$text-color: #fcca89;
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    background-color: #666;
+    color: $text-color;
+
+    .my-nav {
+      z-index: 50;
+
+      .navbar-brand img {
+        width: clamp(5rem, 16.5vw, 10rem);
+      }
+
+      .nav-item {
+        color: $nav-color;
+
+        &:hover {
+          color: #c3ae6d;
+        }
+      }
+    }
+
+    .site-header {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(180deg, #2e394f 20.79%, #000000 91.02%);
+      overflow: hidden;
+
+      .hero-text {
+        padding-top: 15rem;
+        z-index: 5;
+
+        h1 {
+          font-weight: 400;
+        }
+
+        h3 {
+          font-weight: 500;
+          .bold {
+            font-weight: 900;
+          }
+        }
+      }
+
+      #hero-couple {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-height: 80vh;
+      }
+    }
+
+    main {
+      background-color: #000000;
+
+      .details {
+        position: relative;
+        height: 200vh;
+
+        &-border {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+        &-layout {
+          z-index: 2;
+          position: absolute;
+          width: 100%;
+          top: 20%;
+          left: 0;
+          right: 0;
+          bottom: 20%;
+        }
+        &-logo {
+          height: clamp(9rem, 20vw, 38rem);
+          // height: 22.625rem;
+        }
+      }
+
+      #rsvp .contacts-link {
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/footer_image.svg") center no-repeat;
+      background-size: auto;
+      padding: 15vh 0;
+    }
+  }
+}
