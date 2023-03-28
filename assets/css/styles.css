@@ -1,61 +1,96 @@
 html {
   scroll-behavior: smooth;
 }
-html body {
+
+body {
   background-color: #666;
   color: #fcca89;
 }
-html body .my-nav {
+
+.my-nav {
   z-index: 50;
 }
-html body .my-nav .navbar-brand img {
+.my-nav .navbar-brand img {
   width: clamp(5rem, 16.5vw, 10rem);
 }
-html body .my-nav .nav-item {
-  color: #ebe0be;
+.my-nav.scrolled {
+  background: rgba(46, 57, 79, 0.662);
+  backdrop-filter: blur(1.25rem);
+  -webkit-backdrop-filter: blur(1.25rem);
+  box-shadow: 0 5px 5px rgba(51, 51, 51, 0.805);
+  opacity: 0;
+  animation: clear 0.5s ease-in-out forwards;
 }
-html body .my-nav .nav-item:hover {
+.my-nav.scrolled .navbar-brand img {
+  height: 4rem;
+  transition-timing-function: ease-in-out;
+}
+.my-nav .nav-link {
+  color: #ebe0be;
+  position: relative;
+  padding-bottom: 2px;
+}
+.my-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  transition: all 0.5s cubic-bezier(0.03, 0.78, 0.4, 1.38);
+  background-color: #c3ae6d;
+  opacity: 0;
+  transform: scaleX(0);
+}
+.my-nav .nav-link:hover {
   color: #c3ae6d;
 }
-html body .site-header {
+.my-nav .nav-link:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.site-header {
   position: relative;
   height: 100vh;
   background: linear-gradient(180deg, #2e394f 20.79%, #000000 91.02%);
   overflow: hidden;
 }
-html body .site-header .hero-text {
+.site-header .hero-text {
   padding-top: 15rem;
   z-index: 5;
 }
-html body .site-header .hero-text h1 {
+.site-header .hero-text h1 {
   font-weight: 400;
 }
-html body .site-header .hero-text h3 {
+.site-header .hero-text h3 {
   font-weight: 500;
 }
-html body .site-header .hero-text h3 .bold {
+.site-header .hero-text h3 .bold {
   font-weight: 900;
 }
-html body .site-header #hero-couple {
+.site-header #hero-couple {
   position: absolute;
   right: 0;
   bottom: 0;
   max-height: 80vh;
 }
-html body main {
+
+main {
   background-color: #000000;
 }
-html body main .details {
+main .details {
   position: relative;
   height: 200vh;
 }
-html body main .details-border {
+main .details-border {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
 }
-html body main .details-layout {
+main .details-layout {
   z-index: 2;
   position: absolute;
   width: 100%;
@@ -64,20 +99,28 @@ html body main .details-layout {
   right: 0;
   bottom: 20%;
 }
-html body main .details-logo {
+main .details-logo {
   height: clamp(9rem, 20vw, 38rem);
 }
-html body main #rsvp .contacts-link {
+main #rsvp .contacts-link {
   text-decoration: none;
   color: #fcca89;
 }
-html body main #rsvp .contacts-link:hover {
+main #rsvp .contacts-link:hover {
   text-decoration: underline;
 }
-html body footer {
+
+footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/footer_image.svg") center no-repeat;
   background-size: auto;
   padding: 15vh 0;
+}
+
+@keyframes clear {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
