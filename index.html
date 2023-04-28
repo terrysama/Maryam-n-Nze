@@ -25,7 +25,7 @@
         class="navbar-brand mx-md-auto order-md-2"
         aria-label="Go to page hero section"
       >
-        <img src="./assets/img/logo halo.svg" alt="Logo">
+        <img src="./assets/img/logo_halo.svg" alt="Logo" id="navBrand">
       </a>
 
       <button
@@ -40,20 +40,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div
-        class="myToggleNav collapse navbar-collapse row justify-content-center order-md-1"
+        class="myToggleNav collapse navbar-collapse row justify-content-center order-md-1 fw-semibold"
         id="myToggleNav"
       >
         <div role="menubar" class="left-nav navbar-nav justify-content-evenly">
-          <a role="menuitem" href="#welcome" class="nav-item nav-link">home</a>
-          <a role="menuitem" href="#details" class="nav-item nav-link"
+          <a role="menuitem" href="#welcome" class="nav-item nav-link px-2 px-md-0">home</a>
+          <a role="menuitem" href="#details" class="nav-item nav-link px-2 px-md-0"
             >wedding details</a
           >
         </div>
       </div>
-      <div class="myToggleNav collapse navbar-collapse row justify-content-center order-md-3">
+      <div class="myToggleNav collapse navbar-collapse row justify-content-center order-md-3 fw-semibold">
         <div role="menubar" class="right-nav navbar-nav justify-content-evenly">
-          <a role="menuitem" href="#gallery" class="nav-item nav-link">gallery</a>
-          <a role="menuitem" href="#rsvp" class="nav-item nav-link">rsvp</a>
+          <a role="menuitem" href="#gallery" class="nav-item nav-link px-2 px-md-0">gallery</a>
+          <a role="menuitem" href="#rsvp" class="nav-item nav-link px-2 px-md-0">rsvp</a>
         </div>
       </div>
     </div>
@@ -62,15 +62,17 @@
   <header id="hero" class="site-header bg-secondary">
     <div class="hero-layout d-flex flex-column min-vh-100">
       <div class="header-content d-flex flex-column flex-fill">
-        <div class="conatiner row align-items-center flex-fill text-center">
-          <div class="hero-text col col-lg-6 d-flex flex-column align-items-center justify-content-center">
+        <div class="conatiner row justify-content-start flex-fill text-center">
+          <div class="hero-text col col-lg-6 d-flex flex-column align-items-center justify-content-evenly">
             <h1 class="pb-3">The Wedding of</h1>
-            <img class="text-layout" src="./assets/img/vectors and icons/Maryam David & Nze Opara.svg" alt="Hero text">
-            <h3 class="pt-5">27th <span class="bold">May</span> 2023.</h3>
+            <img class="text-layout img-fluid" src="./assets/img/vectors and icons/Maryam David & Nze Opara.svg" alt="Hero text">
+            <h3 class="pt-3 pt-lg-5">27th <span class="bold">May</span> 2023.</h3>
           </div>
-          <div class="hero-image col-lg-6 d-none d-lg-block">
-            <img id="hero-couple" class="layout-image" src="./assets/img/hero image.svg" alt="Hero image">
-          </div>
+          <!-- <div class="image-layout d-none d-lg-block col-lg-6">
+            <div class="hero-image">
+              <img id="hero-couple" src="./assets/img/hero image.svg" alt="Hero image">
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -79,11 +81,11 @@
   <main role="main">
     <article id="welcome" class="min-vh-100 d-flex flex-column justify-content-center">
       <section class="welcome-layout container">
-        <div class="row align-items-center justify-content-center">
-          <div class="welcome-image col-8 col-md-4 pt-5">
-            <img src="./assets/img/welcome photo.svg" alt="Welcome" class="image-layout">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="welcome-image col-8 col-md-5 pt-5 text-center">
+            <img src="./assets/img/welcome photo.svg" alt="Welcome" class="image-layout img-fluid">
           </div>
-          <div class="col-10 col-md-6 offset-md-1 text-center text-md-start">
+          <div class="col-10 col-md-5 offset-md-2 text-center text-md-start mx-lg-auto">
             <header class="d-flex pb-5">
               <i class="rings">
                 <img src="./assets/img/vectors and icons/rings.svg" alt="icon" class="ring-icon">
@@ -100,7 +102,7 @@
       </section>
     </article>
 
-    <article id="details" class="details min-vh-100 d-flex">
+    <!-- <article id="details" class="details min-vh-100 d-flex">
       <img src="./assets/img/vectors and icons/info border.svg" alt="" class="details-border">
       <section class="details-layout container d-flex justify-content-center py-5">
         <div class="col-6">
@@ -110,35 +112,168 @@
               <h3 class="fw-light">sat</h3>
               <h3 class="display-6">may <span class="divider px-3">|</span> 27 <span class="divider px-3">|</span> 2023</h3>
             </div>
-            <p class="h4 pb-5 fw-light"><span class="fw-bold">Reception: </span>The reception will take place at [reception venue] at 6:00 PM. The reception venue is located at [address] and there is ample parking available.</p>
-            <p class="h4 pb-5 fw-light"><span class="fw-bold">Ceremony: </span>The ceremony will take place at the Mubi LGA central mosque at 10:00 AM. The mosque is located at [address] and there is ample parking available.</p>
+            <p class="h4 pb-5 fw-light"><span class="fw-bold">Reception: </span>The reception will take place at <span class="fw-bold">[reception venue]</span> at 6:00 PM. The reception venue is located at <span class="fw-bold">[address]</span> and there is ample parking available.</p>
+            <p class="h4 pb-5 fw-light"><span class="fw-bold">Ceremony: </span>The ceremony will take place at the Mubi LGA central mosque at 10:00 AM. The mosque is located at <span class="fw-bold">[address]</span> and there is ample parking available.</p>
             <p class="h4 pb-5 fw-light"><span class="fw-bold">Dress Code: </span>We kindly request that our guests dress in traditional attire. The color theme for the day is dark navy blue and champagne gold, and we encourage our guests to incorporate these colors into their attire.</p>
           </div>
         </div>
       </section>
-    </article>
-
-    <!-- <article class="min-vh-100 d-flex">
-      <img src="./Group 21.svg" alt="">
     </article> -->
+
+    <article id="details" class="details min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="overlay container">
+        <section class="details-layout container d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="top"></div>
+          <div class="right"></div>
+          <div class="bottom"></div>
+          <div class="left"></div>
+          <img src="./assets/img/vectors and icons/floral-top.svg" alt="" class="floral-top">
+          <img src="./assets/img/vectors and icons/floral-bottom.svg" alt="" class="floral-bottom">
+          <img src="./assets/img/logo & ring.svg" alt="" class="details-logo">
+          <div class="wedding-date text-uppercase py-5">
+            <h3 class="fw-light">sat</h3>
+            <h3 class="display-6">may <span class="divider px-3">|</span> 27 <span class="divider px-3">|</span> 2023</h3>
+          </div>
+          <p class="h4 pb-5 fw-light"><span class="fw-bold">Ceremony: </span>The ceremony will take place at <span class="fw-semibold">Fellowship English Baptist Church, Mubi State low cost.</span> behind <span class="fw-semibold text-capitalize">e.y.n church, lokuwa</span> at 10:00 AM.
+          <p class="h4 pb-5 fw-light"><span class="fw-bold">Reception: </span>The reception will take place at <span class="fw-semibold">Jikan Mana Hall, Mubi (ADSU Guest House)</span> and there is ample parking available.</p>
+          <p class="h4 pb-5 fw-light"><span class="fw-bold">Dress Code: </span>We kindly request that our guests dress in traditional attire. The color theme for the day is <span class="fw-semibold text-capitalize">dark navy blue</span>, <span class="fw-semibold text-capitalize">champagne gold</span>, <span class="fw-semibold text-capitalize">black & white</span>, and we encourage our guests to incorporate these colors into their attire.</p>
+        </section>
+      </div>
+      
+    </article>
 
     <section id="gallery" class="py-5 my-5">
       <div class="conatainer-fluid">
         <h2 class="display-2 fw-light text-center text-uppercase py-5">gallery</h2>
-        <div class="photo-grid container d-flex justify-content-between">
-          <img src="./assets/img/gallery 1.svg" alt="image1">
-          <img src="./assets/img/gallery 2.svg" alt="image2">
-          <img src="./assets/img/gallery 3.svg" alt="image3">
+        <div class="photo-grid container mx-auto row row-col-1 row-cols-sm-3">
+          <div class="col">
+            <img src="./assets/img/gallery 1.svg" alt="image1" class="img-fluid">
+          </div>
+          <div class="col">
+            <img src="./assets/img/gallery 2.svg" alt="image2" class="img-fluid">
+          </div>
+          <div class="col">
+            <img src="./assets/img/gallery 3.svg" alt="image3" class="img-fluid">
+          </div>
         </div>
         <div class="text-white text-decoration-underline text-uppercase text-center h3 fw-light py-5">see more</div>
-        <div class="photo-slide d-flex">
+        <div class="photo-slide d-flex justify-content-center">
+          <div class="row row-cols-6 col-12 col-xxl 11 text-center">
+            <div class="col px-0">
+              <img src="./assets/img/gallery_slide1.svg" alt="slide1" class="img-fluid">
+            </div>
+            <div class="col px-0">
+              <img src="./assets/img/gallery_slide2.svg" alt="slide2" class="img-fluid">
+            </div>
+            <div class="col px-0">
+              <img src="./assets/img/gallery_slide3.svg" alt="slide3" class="img-fluid">
+            </div>
+            <div class="col px-0">
+              <img src="./assets/img/gallery_slide4.svg" alt="slide4" class="img-fluid">
+            </div>
+            <div class="col px-0">
+              <img src="./assets/img/gallery_slide5.svg" alt="slide5" class="img-fluid">
+            </div>
+            <div class="col px-0">
+              <img src="./assets/img/gallery_slide6.svg" alt="slide6" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- MIGHT HAVE TO TURN THIS SECTION INTO A CAROUSEL -->
+
+        <!-- <div class="photo-slide d-flex flex-wrap justify-content-center">
           <img src="./assets/img/gallery_slide1.svg" alt="slide1" class="">
           <img src="./assets/img/gallery_slide2.svg" alt="slide2" class="">
           <img src="./assets/img/gallery_slide3.svg" alt="slide3" class="">
           <img src="./assets/img/gallery_slide4.svg" alt="slide4" class="">
           <img src="./assets/img/gallery_slide5.svg" alt="slide5" class="">
           <img src="./assets/img/gallery_slide6.svg" alt="slide6" class="">
-        </div>
+        </div> -->
+
+        <div class="container-xl">
+          <!-- Bootstrap carousel -->
+          <div id="carouselTypeIndicators" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <!-- Bootstrap carousel indicators [nav] -->
+              <button type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide-to="0" class="border-0 active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide-to="1" class="border-0" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide-to="2" class="border-0" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Bootstrap inners [slides] -->
+            <div class="carousel-inner mx-auto">
+              <!-- Carousel slide 1 -->
+              <div class="carousel-item text-center active">
+                <div class="image-quote my-3">
+                  <img class="rounded-circle " src="./assets/img/artistes/Ugoccie.JPG" alt="Ugoccie">
+                </div>
+                <blockquote class="blockquote fade-in">
+                  <h3 class="col-8 col-md-9 mx-auto fs-3 py-3 artiste-quote testimonial lead">"A well-known quote, contained in a blockquote element."</h3>
+                  <div class="py-3 fade-in">
+                    <p class="fs-6 mb-0 fw-semibold text-uppercase" class="artiste-name">Ugoccie</p>
+                    <p class="fs-6 fw-lighter text-capitalize" class="category">Recording Artist</p>
+                  </div>
+                </blockquote>
+              </div>
+              
+              <!-- Carousel slide 2 -->
+              <div class="carousel-item text-center">
+                <div class="image-quote my-3">
+                  <img class="rounded-circle " src="./assets/img/artistes/D'banj.jpeg" alt="D'banj">
+                </div>
+                <blockquote class="blockquote fade-in">
+                  <h3 class="col-8 col-md-9 mx-auto fs-3 py-3 artiste-quote testimonial lead">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, suscipit? Eum sapiente hic reiciendis at dolore aliquam. Sed, deserunt ipsum."</h3>
+                  <div class="py-3 fade-in">
+                    <p class="fs-6 mb-0 fw-semibold text-uppercase" class="artiste-name">D'banj</p>
+                    <p class="fs-6 fw-lighter text-capitalize" class="category">Recording Artist</p>
+                  </div>
+                </blockquote>
+              </div>
+
+              <!-- Carousel slide 3 -->
+              <div class="carousel-item text-center">
+                <div class="image-quote my-3">
+                  <img class="rounded-circle " src="./assets/img/artistes/Dremo.jpeg" alt="Dremo">
+                </div>
+                <blockquote class="blockquote fade-in">
+                  <h3 class="col-8 col-md-9 mx-auto fs-3 py-3 artiste-quote testimonial lead">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus ex aspernatur at facilis voluptate."</h3>
+                  <div class="py-3 fade-in">
+                    <p class="fs-6 mb-0 fw-semibold text-uppercase" class="artiste-name">Dremo</p>
+                    <p class="fs-6 fw-lighter text-capitalize" class="category">Recording Artist</p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Carousel control buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide="prev">
+              <span class="" aria-hidden="true">
+                <svg width="56" height="56" xmlns="https://www.w3.org/2000/svg">
+                  <g transform="rotate(-90 28 27)" stroke="#FFF" fill="none" fill-rule="evenodd">
+                    <circle opacity=".2" cx="27" cy="27" r="27"/>
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 30l6-6h0l6 6"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide="next">
+              <span class="" aria-hidden="true">
+                <svg width="56" height="56" xmlns="https://www.w3.org/2000/svg">
+                  <g transform="rotate(90 27 28)" stroke="#FFF" fill="none" fill-rule="evenodd">
+                    <circle opacity=".2" cx="27" cy="27" r="27"/>
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 30l6-6h0l6 6"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>  <!-- /carousel -->
+        </div>  <!-- /container -->
+  
+
       </div>
     </section>
 
@@ -152,13 +287,9 @@
         </p>
       </div>
       <div class="rsvp-button pt-3 pb-5">
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="btn btn-warning btn-lg rounded-pill fw-bold text-white px-5 py-3">Click here to RSVP</a>
+        <a href="https://form.jotform.com/231123917181551" target="_blank" rel="noopener noreferrer" class="btn btn-warning btn-lg rounded-pill fw-bold text-white px-5 py-3">Click here to RSVP</a>
       </div>
       <div class="registry-info text-center col-8 py-5">
-        <p class="py-5">
-          We have created a registry for those who wish to give us a gift or make donations.
-          Please kindly contact us directly to send your gifts and donations. Thank you.
-        </p>
         <p class="py-3">If you have any questions or need further assistance, please don't hesitate to contact us.</p>
         <div class="contacts d-inline-flex flex-column fs-2">
           <a href="tel:+2348137838321" class="contacts-link pb-3">
