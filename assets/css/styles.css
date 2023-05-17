@@ -286,8 +286,35 @@ main .wedding-date {
     padding-bottom: 5rem;
   }
 }
-main .carousel-indicators .active {
-  background: linear-gradient(180deg, #256fb6 1.04%, #7b61ff 49.48%, #677afd 100%);
+main .carousel-thumb-indicators {
+  position: static;
+}
+main .carousel-thumb-indicators button[data-bs-target] {
+  width: 6.25rem;
+  height: 9.375rem;
+}
+main .multi-item-carousel .carousel-inner .carousel-item {
+  height: 28.125rem;
+}
+main .multi-item-carousel .carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+main .multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+main .multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+main .multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+main .multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+main .multi-item-carousel button.carousel-control-prev, main .multi-item-carousel button.carousel-control-next {
+  height: fit-content;
+  top: 50%;
 }
 main #rsvp .contacts-link {
   text-decoration: none;

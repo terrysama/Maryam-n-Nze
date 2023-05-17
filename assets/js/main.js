@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   const nav = document.querySelector(".my-nav");
   const hero = document.querySelector("#hero");
   const navScrolled = document.querySelector(".my-nav.scrolled");
@@ -38,4 +38,31 @@
   //   }
   //   prevScrollPosition = currentScrollPosition;
   // };
-})();
+
+  // Multi item Carousel
+  // Instantiate the Bootstrap carousel
+  const carousel = $(".multi-item-carousel");
+  carousel.carousel({
+    interval: 200000,
+  });
+
+  // for every slide in carousel, copy the next slide's item in the slide.
+  // Do the same for the next, next item.
+  $("#carouselThumbIndicators .carousel-item").each(function () {
+    let next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(":first");
+    }
+    next.children(":first-child").clone().appendTo($(this));
+
+    if (next.next().length > 0) {
+      next.next().children(":first-child").clone().appendTo($(this));
+    } else {
+      $(this)
+        .siblings(":first")
+        .children(":first-child")
+        .clone()
+        .appendTo($(this));
+    }
+  });
+});

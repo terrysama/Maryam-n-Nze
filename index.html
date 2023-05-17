@@ -16,6 +16,7 @@
 </head>
 <body>
   
+  <!-- NAVIGATION BAR -->
   <nav
     class="my-nav navbar navbar-expand-md navbar-dark w-100 position-fixed text-uppercase"
   >
@@ -58,7 +59,9 @@
       </div>
     </div>
   </nav>
+  <!-- NAVIGATION ENDS -->
 
+  <!-- HERO SECTION -->
   <header id="hero" class="site-header bg-secondary">
     <div class="hero-layout d-flex flex-column min-vh-100">
       <div class="header-content d-flex flex-column flex-fill">
@@ -77,8 +80,10 @@
       </div>
     </div>
   </header>
+  <!-- HERO ENDS -->
 
   <main role="main">
+    <!-- HOME/WELCOME SECTION -->
     <article id="welcome" class="min-vh-100 d-flex flex-column justify-content-center">
       <section class="welcome-layout container">
         <div class="row align-items-center justify-content-evenly">
@@ -102,24 +107,7 @@
       </section>
     </article>
 
-    <!-- <article id="details" class="details min-vh-100 d-flex">
-      <img src="./assets/img/vectors and icons/info border.svg" alt="" class="details-border">
-      <section class="details-layout container d-flex justify-content-center py-5">
-        <div class="col-6">
-          <div class="container d-flex flex-column align-items-center justify-content-center text-center">
-            <img src="./assets/img/logo & ring.svg" alt="" class="details-logo">
-            <div class="wedding-date text-uppercase py-5">
-              <h3 class="fw-light">sat</h3>
-              <h3 class="display-6">may <span class="divider px-3">|</span> 27 <span class="divider px-3">|</span> 2023</h3>
-            </div>
-            <p class="h4 pb-5 fw-light"><span class="fw-bold">Reception: </span>The reception will take place at <span class="fw-bold">[reception venue]</span> at 6:00 PM. The reception venue is located at <span class="fw-bold">[address]</span> and there is ample parking available.</p>
-            <p class="h4 pb-5 fw-light"><span class="fw-bold">Ceremony: </span>The ceremony will take place at the Mubi LGA central mosque at 10:00 AM. The mosque is located at <span class="fw-bold">[address]</span> and there is ample parking available.</p>
-            <p class="h4 pb-5 fw-light"><span class="fw-bold">Dress Code: </span>We kindly request that our guests dress in traditional attire. The color theme for the day is dark navy blue and champagne gold, and we encourage our guests to incorporate these colors into their attire.</p>
-          </div>
-        </div>
-      </section>
-    </article> -->
-
+    <!-- DETAILS SECTION -->
     <article id="details" class="details min-vh-100 d-flex flex-column justify-content-center align-items-center">
       <div class="overlay container">
         <section class="details-layout container d-flex flex-column align-items-center justify-content-center text-center">
@@ -139,115 +127,113 @@
           <p class="h4 pb-5 fw-light"><span class="fw-bold">Dress Code: </span>We kindly request that our guests dress in traditional attire. The color theme for the day is <span class="fw-semibold text-capitalize">dark navy blue</span>, <span class="fw-semibold text-capitalize">champagne gold</span>, <span class="fw-semibold text-capitalize">black & white</span>, and we encourage our guests to incorporate these colors into their attire.</p>
         </section>
       </div>
-      
     </article>
+    <!-- DETAILS ENDS -->
 
+    <!-- GALLERY SECTION -->
     <section id="gallery" class="py-5 my-5">
       <div class="conatainer-fluid">
         <h2 class="display-2 fw-light text-center text-uppercase py-5">gallery</h2>
-        <div class="photo-grid container mx-auto row row-col-1 row-cols-sm-3">
-          <div class="col">
-            <img src="./assets/img/gallery 1.svg" alt="image1" class="img-fluid">
-          </div>
-          <div class="col">
-            <img src="./assets/img/gallery 2.svg" alt="image2" class="img-fluid">
-          </div>
-          <div class="col">
-            <img src="./assets/img/gallery 3.svg" alt="image3" class="img-fluid">
-          </div>
-        </div>
-        <div class="text-white text-decoration-underline text-uppercase text-center h3 fw-light py-5">see more</div>
-        <div class="photo-slide d-flex justify-content-center">
-          <div class="row row-cols-6 col-12 col-xxl 11 text-center">
-            <div class="col px-0">
-              <img src="./assets/img/gallery_slide1.svg" alt="slide1" class="img-fluid">
-            </div>
-            <div class="col px-0">
-              <img src="./assets/img/gallery_slide2.svg" alt="slide2" class="img-fluid">
-            </div>
-            <div class="col px-0">
-              <img src="./assets/img/gallery_slide3.svg" alt="slide3" class="img-fluid">
-            </div>
-            <div class="col px-0">
-              <img src="./assets/img/gallery_slide4.svg" alt="slide4" class="img-fluid">
-            </div>
-            <div class="col px-0">
-              <img src="./assets/img/gallery_slide5.svg" alt="slide5" class="img-fluid">
-            </div>
-            <div class="col px-0">
-              <img src="./assets/img/gallery_slide6.svg" alt="slide6" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-        <!-- MIGHT HAVE TO TURN THIS SECTION INTO A CAROUSEL -->
-
-        <!-- <div class="photo-slide d-flex flex-wrap justify-content-center">
-          <img src="./assets/img/gallery_slide1.svg" alt="slide1" class="">
-          <img src="./assets/img/gallery_slide2.svg" alt="slide2" class="">
-          <img src="./assets/img/gallery_slide3.svg" alt="slide3" class="">
-          <img src="./assets/img/gallery_slide4.svg" alt="slide4" class="">
-          <img src="./assets/img/gallery_slide5.svg" alt="slide5" class="">
-          <img src="./assets/img/gallery_slide6.svg" alt="slide6" class="">
-        </div> -->
 
         <div class="container-xl">
           <!-- Bootstrap carousel -->
-          <div id="carouselTypeIndicators" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-indicators">
-              <!-- Bootstrap carousel indicators [nav] -->
-              <button type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide-to="0" class="border-0 active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide-to="1" class="border-0" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide-to="2" class="border-0" aria-label="Slide 3"></button>
-            </div>
-
+          <div id="carouselThumbIndicators" class="multi-item-carousel carousel slide py-5" data-bs-ride="true" >
             <!-- Bootstrap inners [slides] -->
-            <div class="carousel-inner mx-auto">
+            <div class="carousel-inner mx-auto mb-5">
               <!-- Carousel slide 1 -->
-              <div class="carousel-item text-center active">
-                <div class="image-quote my-3">
-                  <img class="rounded-circle " src="./assets/img/artistes/Ugoccie.JPG" alt="Ugoccie">
+                <div class="carousel-item active text-center">
+                    <img class="img-fluid my-3 mx-2" width="300" src="./assets/img/DSC_2213.jpg" alt="Ugoccie">
                 </div>
-                <blockquote class="blockquote fade-in">
-                  <h3 class="col-8 col-md-9 mx-auto fs-3 py-3 artiste-quote testimonial lead">"A well-known quote, contained in a blockquote element."</h3>
-                  <div class="py-3 fade-in">
-                    <p class="fs-6 mb-0 fw-semibold text-uppercase" class="artiste-name">Ugoccie</p>
-                    <p class="fs-6 fw-lighter text-capitalize" class="category">Recording Artist</p>
-                  </div>
-                </blockquote>
-              </div>
               
               <!-- Carousel slide 2 -->
-              <div class="carousel-item text-center">
-                <div class="image-quote my-3">
-                  <img class="rounded-circle " src="./assets/img/artistes/D'banj.jpeg" alt="D'banj">
+                <div class="carousel-item text-center">
+                    <img class="img-fluid my-3 mx-2" width="300" src="./assets/img/DSC_2224.jpg" alt="D'banj">
                 </div>
-                <blockquote class="blockquote fade-in">
-                  <h3 class="col-8 col-md-9 mx-auto fs-3 py-3 artiste-quote testimonial lead">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, suscipit? Eum sapiente hic reiciendis at dolore aliquam. Sed, deserunt ipsum."</h3>
-                  <div class="py-3 fade-in">
-                    <p class="fs-6 mb-0 fw-semibold text-uppercase" class="artiste-name">D'banj</p>
-                    <p class="fs-6 fw-lighter text-capitalize" class="category">Recording Artist</p>
-                  </div>
-                </blockquote>
-              </div>
 
               <!-- Carousel slide 3 -->
-              <div class="carousel-item text-center">
-                <div class="image-quote my-3">
-                  <img class="rounded-circle " src="./assets/img/artistes/Dremo.jpeg" alt="Dremo">
+                <div class="carousel-item text-center">
+                    <img class="img-fluid my-3 mx-2" width="300" src="./assets/img/DSC_2229.jpg" alt="Dremo">
                 </div>
-                <blockquote class="blockquote fade-in">
-                  <h3 class="col-8 col-md-9 mx-auto fs-3 py-3 artiste-quote testimonial lead">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus ex aspernatur at facilis voluptate."</h3>
-                  <div class="py-3 fade-in">
-                    <p class="fs-6 mb-0 fw-semibold text-uppercase" class="artiste-name">Dremo</p>
-                    <p class="fs-6 fw-lighter text-capitalize" class="category">Recording Artist</p>
-                  </div>
-                </blockquote>
-              </div>
+
+              <!-- Carousel slide 4 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2234.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 5 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2243.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 6 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2246.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 7 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2342.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 8 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2349.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 9 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2357.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 10 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2417.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 11 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2420.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
             </div>
 
+            <!-- Bootstrap carousel indicators [nav] -->
+            <div class="carousel-thumb-indicators d-flex justify-content-center">
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="0" class="thumbnail active border-0 p-0" aria-current="true" aria-label="Slide 1">
+                <img src="./assets/img/DSC_2213.jpg" alt="slide_1" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="1" class="thumbnail border-0 p-0" aria-label="Slide 2">
+                <img src="./assets/img/DSC_2224.jpg" alt="slide_2" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="2" class="thumbnail border-0 p-0" aria-label="Slide 3">
+                <img src="./assets/img/DSC_2229.jpg" alt="slide_3" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="3" class="thumbnail border-0 p-0" aria-label="Slide 4">
+                <img src="./assets/img/DSC_2234.jpg" alt="slide_4" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="4" class="thumbnail border-0 p-0" aria-label="Slide 5">
+                <img src="./assets/img/DSC_2243.jpg" alt="slide_5" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="5" class="thumbnail border-0 p-0" aria-label="Slide 6">
+                <img src="./assets/img/DSC_2246.jpg" alt="slide_6" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="6" class="thumbnail border-0 p-0" aria-label="Slide 7">
+                <img src="./assets/img/DSC_2342.jpg" alt="slide_7" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="7" class="thumbnail border-0 p-0" aria-label="Slide 8">
+                <img src="./assets/img/DSC_2349.jpg" alt="slide_8" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="8" class="thumbnail border-0 p-0" aria-label="Slide 9">
+                <img src="./assets/img/DSC_2357.jpg" alt="slide_9" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="9" class="thumbnail border-0 p-0" aria-label="Slide 10">
+                <img src="./assets/img/DSC_2417.jpg" alt="slide_10" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide-to="10" class="thumbnail border-0 p-0" aria-label="Slide 11">
+                <img src="./assets/img/DSC_2420.jpg" alt="slide_11" class="d-block w-100 h-100">
+              </button>
+            </div>  <!-- /Carousel thumb indicators -->
             <!-- Carousel control buttons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide="prev">
               <span class="" aria-hidden="true">
                 <svg width="56" height="56" xmlns="https://www.w3.org/2000/svg">
                   <g transform="rotate(-90 28 27)" stroke="#FFF" fill="none" fill-rule="evenodd">
@@ -258,7 +244,7 @@
               </span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTypeIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselThumbIndicators" data-bs-slide="next">
               <span class="" aria-hidden="true">
                 <svg width="56" height="56" xmlns="https://www.w3.org/2000/svg">
                   <g transform="rotate(90 27 28)" stroke="#FFF" fill="none" fill-rule="evenodd">
@@ -269,14 +255,139 @@
               </span>
               <span class="visually-hidden">Next</span>
             </button>
-
           </div>  <!-- /carousel -->
-        </div>  <!-- /container -->
-  
+        </div>  <!-- /container-xl -->
 
+        <br class="my-5">
+
+        <div class="container-xl mt-5">
+          <!-- Bootstrap carousel -->
+          <!--  -->
+          <div id="myCarousel" class="multi-item-carousel carousel slide py-5" data-bs-ride="true" >
+            <!-- Bootstrap inners [slides] -->
+            <div class="carousel-inner mx-auto mb-5">
+              <!-- Carousel slide 1 -->
+                <div class="carousel-item active text-center">
+                    <img class="img-fluid my-3 mx-2" width="300" src="./assets/img/DSC_2213.jpg" alt="Ugoccie">
+                </div>
+              
+              <!-- Carousel slide 2 -->
+                <div class="carousel-item text-center">
+                    <img class="img-fluid my-3 mx-2" width="300" src="./assets/img/DSC_2224.jpg" alt="D'banj">
+                </div>
+
+              <!-- Carousel slide 3 -->
+                <div class="carousel-item text-center">
+                    <img class="img-fluid my-3 mx-2" width="300" src="./assets/img/DSC_2229.jpg" alt="Dremo">
+                </div>
+
+              <!-- Carousel slide 4 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2234.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 5 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2243.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 6 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2246.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 7 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2342.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 8 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2349.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 9 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2357.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 10 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2417.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+
+              <!-- Carousel slide 11 -->
+                <div class="carousel-item text-center">
+                  <img src="./assets/img/DSC_2420.jpg" alt="" class="img-fluid my-3 mx-2" width="300">
+                </div>
+            </div>
+
+            <!-- Bootstrap carousel indicators [nav] -->
+            <div class="carousel-thumb-indicators d-flex justify-content-center">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="thumbnail active border-0 p-0" aria-current="true" aria-label="Slide 1">
+                <img src="./assets/img/DSC_2213.jpg" alt="slide_1" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="thumbnail border-0 p-0" aria-label="Slide 2">
+                <img src="./assets/img/DSC_2224.jpg" alt="slide_2" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="thumbnail border-0 p-0" aria-label="Slide 3">
+                <img src="./assets/img/DSC_2229.jpg" alt="slide_3" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" class="thumbnail border-0 p-0" aria-label="Slide 4">
+                <img src="./assets/img/DSC_2234.jpg" alt="slide_4" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" class="thumbnail border-0 p-0" aria-label="Slide 5">
+                <img src="./assets/img/DSC_2243.jpg" alt="slide_5" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" class="thumbnail border-0 p-0" aria-label="Slide 6">
+                <img src="./assets/img/DSC_2246.jpg" alt="slide_6" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" class="thumbnail border-0 p-0" aria-label="Slide 7">
+                <img src="./assets/img/DSC_2342.jpg" alt="slide_7" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" class="thumbnail border-0 p-0" aria-label="Slide 8">
+                <img src="./assets/img/DSC_2349.jpg" alt="slide_8" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" class="thumbnail border-0 p-0" aria-label="Slide 9">
+                <img src="./assets/img/DSC_2357.jpg" alt="slide_9" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" class="thumbnail border-0 p-0" aria-label="Slide 10">
+                <img src="./assets/img/DSC_2417.jpg" alt="slide_10" class="d-block w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" class="thumbnail border-0 p-0" aria-label="Slide 11">
+                <img src="./assets/img/DSC_2420.jpg" alt="slide_11" class="d-block w-100 h-100">
+              </button>
+            </div>  <!-- /Carousel thumb indicators -->
+            <!-- Carousel control buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="" aria-hidden="true">
+                <svg width="56" height="56" xmlns="https://www.w3.org/2000/svg">
+                  <g transform="rotate(-90 28 27)" stroke="#FFF" fill="none" fill-rule="evenodd">
+                    <circle opacity=".2" cx="27" cy="27" r="27"/>
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 30l6-6h0l6 6"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="" aria-hidden="true">
+                <svg width="56" height="56" xmlns="https://www.w3.org/2000/svg">
+                  <g transform="rotate(90 27 28)" stroke="#FFF" fill="none" fill-rule="evenodd">
+                    <circle opacity=".2" cx="27" cy="27" r="27"/>
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 30l6-6h0l6 6"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  <!-- /carousel -->
+        </div>  <!-- /container-xl -->
       </div>
     </section>
+    <!-- GALLERY ENDS -->
 
+    <!-- RSVP SECTION -->
     <article id="rsvp" class="d-flex flex-column align-items-center text-center fs-4 py-5">
       <h2 class="subtitle display-2 fw-light text-uppercase py-3">rsvp</h2>
       <div class="d-flex justify-content-center">
@@ -296,7 +407,7 @@
             <i class="fa-solid fa-phone px-3"></i>
             08137838321
           </a>
-          <a href="mailto: opara.nze.godswill@gmail.com" class="contacts-link pb-3">
+          <a href="mailto: opara.nze.godswill@gmail.com" class="contacts-link text-wrap pb-3">
             <i class="fa-regular fa-envelope px-3"></i>
             opara.nze.godswill@gmail.com
           </a>
@@ -306,8 +417,10 @@
         </p>
       </div>
     </article>
+    <!-- RSVP ENDS -->
   </main>
   
+  <!-- FOOTER SECTION -->
   <footer class="d-flex flex-column align-items-center text-center container-fluid">
     <div class="py-lg-5">
       <div class="container py-5">
@@ -318,6 +431,7 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="./assets/js/lib/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
