@@ -75,9 +75,9 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   overflow: hidden;
 }
-@media only screen and (max-width: 767.99px) {
+@media only screen and (max-width: 425.99px) {
   .site-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.05) 15%), url(../img/hero_mobile.png) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2) 15%), url(../img/hero_mobile.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -266,12 +266,15 @@ main .details-logo {
 main .wedding-date {
   font-size: 1.5rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 660px) {
   main .pb-5 {
     padding-bottom: 2rem;
   }
+  main .registry-info .contacts-link {
+    font-size: calc(0.8rem + 0.9vw);
+  }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 661px) {
   main .pb-5 {
     padding-bottom: 3rem;
   }
@@ -292,6 +295,12 @@ main .carousel-thumb-indicators {
 main .carousel-thumb-indicators button[data-bs-target] {
   width: 6.25rem;
   height: 9.375rem;
+}
+@media only screen and (max-width: 767px) {
+  main .carousel-thumb-indicators button[data-bs-target] {
+    max-width: calc(5.8rem + 0.9vw);
+    max-height: calc(3.8rem + 0.9vh);
+  }
 }
 main .multi-item-carousel .carousel-inner .carousel-item {
   height: 28.125rem;
@@ -325,9 +334,12 @@ main #rsvp .contacts-link:hover {
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/footer_image.svg") center no-repeat;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.2) 2%), url("../img/DSC_2768.JPG") center no-repeat;
   background-size: cover;
-  padding: 15vh 0;
+  padding: 21vh 0;
+}
+footer p {
+  font-weight: 400 !important;
 }
 
 @keyframes clear {

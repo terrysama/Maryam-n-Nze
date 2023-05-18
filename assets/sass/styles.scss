@@ -93,8 +93,8 @@ body {
   // background-attachment: fixed;
   overflow: hidden;
 
-  @media only screen and (max-width: 767.99px) {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.05) 15%),
+  @media only screen and (max-width: 425.99px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2) 15%),
       url(../img/hero_mobile.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -322,13 +322,16 @@ main {
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 660px) {
     .pb-5 {
       padding-bottom: 2rem;
     }
+    .registry-info .contacts-link {
+      font-size: calc(0.8rem + 0.9vw);
+    }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 661px) {
     .pb-5 {
       padding-bottom: 3rem;
     }
@@ -359,6 +362,11 @@ main {
       // &.thumbnail:not(.active) {
       //   opacity: 0.5;
       // }
+
+      @media only screen and (max-width: 767px) {
+        max-width: calc(5.8rem + 0.9vw);
+        max-height: calc(3.8rem + 0.9vh);
+      }
     }
     // & .thumbnail.active {
     //   // background: linear-gradient(
@@ -439,10 +447,14 @@ main {
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/footer_image.svg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.2) 2%),
+    url("../img/DSC_2768.JPG") center no-repeat;
   background-size: cover;
-  padding: 15vh 0;
+  padding: 21vh 0;
+
+  p {
+    font-weight: 400 !important;
+  }
 }
 
 @keyframes clear {
